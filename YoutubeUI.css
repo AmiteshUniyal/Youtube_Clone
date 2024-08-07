@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(26, 25, 25);
+}
+.navigation{
+    height: 3em;
+    width: 100%;
+    background-color: rgb(17, 16, 16);
+    position: fixed;
+    top: 0%;
+    display: flex;
+    column-gap: 20%;
+    font-size: larger;
+    align-items: center;
+}
+#loginPage{
+    border-radius: 2em;
+    background-color: rgb(85, 72, 72);
+    color: aliceblue;
+    font-family: sans-serif;
+}
+#login_container{
+    margin-top: 5em;
+    margin-left: 62em;
+    height: 20em;
+    width: 20em;
+    position: absolute;
+    z-index: 10;
+    border-radius: 2em;
+   display: none;
+}
+#logoLight{
+    display: none; 
+    padding: 2.3em;
+}
+#logoDark{
+    padding: 2.3em;
+}
+#search{
+    padding: 0.6em; 
+    border-radius: 2em; 
+    width: 35em; 
+    text-decoration: none;
+}
+.side_navigation{
+    height: 100%;
+    width: 13em;
+    background-color: rgb(17, 16, 16);
+    position: fixed;
+    left: 0%;
+    overflow-y:scroll;
+    color: white;
+    padding-top: 4em;
+
+}
+.side_navigation::-webkit-scrollbar {
+    width: 10px;
+}
+.side_navigation::-webkit-scrollbar-track {
+    background-color:rgb(26, 25, 25);
+    margin-top: 0;
+}
+.side_navigation::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+}
+.side_navigation::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(26, 25, 25);
+}
+#darkmode{
+    height: 2em;
+    width: 2em;
+    border-radius: 3em;
+}
+#darkmode:hover{
+    background-color: rgb(214, 211, 211);
+}
+.navdiv{
+    display: flex;
+    gap: 30%;
+}
+.side{
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
+#list:hover{
+    background-color: rgb(187, 191, 194);
+    color: black;
+}
+#list{
+    padding: 1em;
+    padding-left: 3em;
+}
+#login{
+    height: 2em;
+    width: 2em;
+}
+#login:hover{
+    background-color: rgb(214, 211, 211);
+    border-radius: 3em;
+}
+.divi{
+    padding: 1em;
+}
+#email{
+    padding: 1em;
+    border-radius: 2em;
+    width: 20em;
+}
+#password{
+    padding: 1em;
+    border-radius: 2em;
+    width: 20em;
+}
+.main{
+    display:flex ;
+    padding-top: 6em ;
+    padding-left: 16em;
+    column-gap: 1em;
+    row-gap: 3em;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1115px) {
+    #login_container{
+        margin-top: 5em;
+        margin-left: 45em;
+    }
+    .side_navigation {
+        width: 10em;
+        padding-left: 0.5em;
+    }
+    .navigation{
+        column-gap: 12em;
+    }
+    #search {
+        width: 15em;
+        text-decoration: none;
+    }
+
+    .main {
+        padding-left: 12em;
+    }
+    
+}
+@media (max-width: 932px) {
+    #login_container{
+        margin-top: 5em;
+        margin-left: 35em;
+    }
+    .navigation{
+        column-gap: 8em;
+    }
+}
+@media (max-width: 768px) {
+    #login_container{
+        margin-top: 5em;
+        margin-left: 20em;
+    }
+    .side_navigation {
+display: none;
+    }
+    #search {
+        width: 15em;
+        text-decoration: none;
+    }
+
+    .main {
+        padding-left:1em;
+    }
+    .navigation{
+        column-gap:5em;
+        font-size: larger;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #login_container{
+        margin-top: 5em;
+        margin-left: 0;
+    }
+    .side_navigation {
+        display: none;
+    }
+        .navigation{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(17, 16, 16);
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            row-gap:2px ;
+            font-size: larger;
+            align-items: center;
+        }
+    #search{
+        padding: 0.6em; 
+        border-radius: 1em; 
+        width: 5em; 
+        text-decoration: none;
+    }
+    #logoLight{
+        padding-top: 2px;
+
+    }
+    #logoDark{
+        padding-top: 2px;
+    }
+    .main {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
